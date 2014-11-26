@@ -1,11 +1,10 @@
 source 'https://rubygems.org'
 
-
+gem 'dotenv-rails'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.4'
 gem 'rails_12factor', group: :production
-# Use postgresql as the database for Active Record
-gem 'pg'
+gem 'mysql2'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.3'
 # Use Uglifier as compressor for JavaScript assets
@@ -33,12 +32,14 @@ gem 'spring',        group: :development
 # Use unicorn as the app server
 # gem 'unicorn'
 
-# Use Capistrano for deployment
-# gem 'capistrano-rails', group: :development
-
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
-gem 'simplecov'
-gem 'simplecov-csv'
-gem 'minitest-reporters'
+group :development do
+  gem 'simplecov'
+  gem 'simplecov-csv'
+  gem 'minitest-reporters'
+
+  gem 'capistrano-rails', '~> 1.1'
+  gem 'capistrano-rvm'
+end

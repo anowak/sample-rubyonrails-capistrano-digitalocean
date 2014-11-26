@@ -1,7 +1,7 @@
-Rails+Postgres Heroku sample
-============================
+Ruby on Rails + Capistrano example
+==================================
 
-This sample demonstrates how to setup continuous integration and deployment for a Rails+Postgres project deployed on Heroku.
+This sample demonstrates how to setup continuous integration and deployment for a Ruby on Rails application to DigitalOcean using Capistrano.
 
 For more detailed documentation, please see Shippable's continuous deployment section: http://docs.shippable.com/en/latest/config.html#continuous-deployment
 

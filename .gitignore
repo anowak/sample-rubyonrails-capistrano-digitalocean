@@ -16,3 +16,6 @@
 /tmp
 
 .*.swp
+
+# Ignore dotenv files
+/.env
